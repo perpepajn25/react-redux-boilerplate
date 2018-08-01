@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { connect } from 'react-redux'
-import { changeExampleMessage } from './actions'
+// import { connect } from 'react-redux'
+// import { changeExampleMessage } from './actions'
 
 class App extends Component {
 
-  handleClick = () => {
-    console.log('hello')
-    this.props.changeExampleMessage()
-  }
+  // handleClick = () => {
+  //   console.log('hello')
+  //   this.props.changeExampleMessage()
+  // }
 
   render() {
     return (
@@ -22,23 +22,25 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <h3> { this.props.exampleMessage }</h3>
-        <button onClick={this.handleClick}> Click me </button>
+        {/* <h3> { this.props.exampleMessage }</h3>
+        <button onClick={this.handleClick}> Click me </button> */}
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    exampleMessage: state.exampleState.exampleMessage
-  }
-}
+export default App
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    changeExampleMessage: () => { dispatch(changeExampleMessage()) }
-  }
-}
+// const mapStateToProps = (state) => {
+//   return {
+//     exampleMessage: state.exampleState.exampleMessage
+//   }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     changeExampleMessage: () => { dispatch(changeExampleMessage()) }
+//   }
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
