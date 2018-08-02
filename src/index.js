@@ -13,9 +13,8 @@ import { Provider } from 'react-redux'
 import configureStore from './store/configureStore'
 
 const store = configureStore()
-console.log('store', store)
-console.log('state', store.getState())
-
+// console.log('store', store)
+// console.log('state', store.getState())
 
 ReactDOM.render(
   <Provider store={store}>

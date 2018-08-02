@@ -1,28 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* Version 1 */
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
   text-align: center;
+  background-color: rgba(143, 246, 181, 0.2)
+}
+
+.App-header{
+  height: 45%;
+  width: 65%;
+  background-color: rgba(214, 221, 252, 1);
+  border: 2px solid rgba(0, 18, 137, 1);
+  box-shadow: 7px 10px rgba(0, 18, 137, 1);
+  margin-bottom: 10px;
+  padding: 20px;
+  font-family: 'Source Code Pro';
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 5s linear;
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
+.App-logo-2 {
+  animation: App-logo-spin-2 infinite 5s linear;
+  height: 80px;
 }
 
 .App-intro {
-  font-size: large;
+  background-color: rgba(143, 246, 181, 0.75);
+  padding: 10px;
+  border: 1px solid rgba(0, 18, 137, 1);
+  box-shadow: 5px 5px rgba(0, 18, 137, 1);
+}
+
+h1 {
+  font-weight: bolder;
+  margin-bottom: 0px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@keyframes App-logo-spin-2 {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Version 2 */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.App-header{
+  height: 45%;
+  width: 65%;
+  background-color: rgba(214, 221, 252, 1);
+  border: 2px solid rgba(9, 52, 175, 1);
+  box-shadow: 7px 10px rgba(9, 52, 175, 1);
+  margin-bottom: 10px;
+  padding: 20px;
+  font-family: 'Source Code Pro';
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 5s linear;
+  height: 80px;
+}
+
+.App-logo-2 {
+  animation: App-logo-spin-2 infinite 5s linear;
+  height: 80px;
+}
+
+.App-intro {
+  background-color: rgba(135, 223, 225, 1);
+  padding: 10px;
+  border: 1px solid rgba(9, 52, 175, 1);
+  box-shadow: 5px 5px rgba(9, 52, 175, 1);
+}
+
+h1 {
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin-2 {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+} */
